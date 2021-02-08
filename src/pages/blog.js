@@ -13,7 +13,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div style={{ background: '#fff' }}>
+        <div style={{ background: '#e0e5ec' }}>
           <Helmet title={siteTitle} />
           <div className={styles.hero}>Blog</div>
           <div className="wrapper">
@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
-                  <li key={node.slug}>
+                  <li className={styles.shadow} key={node.slug}>
                     <ArticlePreview article={node} />
                   </li>
                 )

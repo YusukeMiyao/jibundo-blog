@@ -28,6 +28,7 @@ class BlogPostTemplate extends React.Component {
             <p
               style={{
                 display: 'block',
+                
               }}
             >
               {post.publishDate}

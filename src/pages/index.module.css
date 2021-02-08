@@ -1,0 +1,7 @@
+.shadow {
+  padding: 10px;
+  background-color: #e0e5ec;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%),
+    -9px -9px 16px rgb(255 255 255 / 50%);
+  border-radius: 50px;
+}

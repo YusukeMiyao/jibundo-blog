@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
+import styles from './index.module.css'
 
 class RootIndex extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class RootIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <div style={{ background: '#fff' }}>
+        <div style={{ background: '#e0e5ec' }}>
           <Helmet title={siteTitle} />
           <Hero data={author.node} />
           <div className="wrapper">
@@ -22,7 +23,7 @@ class RootIndex extends React.Component {
             <ul className="article-list">
               {posts.map(({ node }) => {
                 return (
-                  <li key={node.slug}>
+                  <li className={styles.shadow} key = { node.slug } >
                     <ArticlePreview article={node} />
                   </li>
                 )
